@@ -19,11 +19,11 @@
                     "type": "article_content"
                 }
             },
-            "block-order": [
+            "block_order": [
                 "thumbnail",
                 "title",
                 "author",
-                "article_published_date",
+                "published_date",
                 "content"
             ]
         }
