@@ -7,10 +7,10 @@
                     "type": "subtotal"
                 },
                 "update-button": {
-                    "type": "update-button"
+                    "type": "update_button"
                 },
                 "checkout-button": {
-                    "type": "checkout-button"
+                    "type": "checkout_button"
                 }
             },
             "block_order": [
