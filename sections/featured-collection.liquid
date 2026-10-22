@@ -6,7 +6,7 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
       {% for product in section.settings.featured_collection.products limit: section.settings.number_of_products_to_show %}
 
-        {% render 'product-card' | product_product: product %}
+        {% render 'product-card', product_product: product %}
 
 
         {% else %}
@@ -52,4 +52,13 @@
         { "name" : "Featured Collection" }
     ]
   }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'product-card' | product_product: product %}"
+  to: "{% render 'product-card', product_product: product %}"
+  position: 340..393
+{%- endcomment -%}
